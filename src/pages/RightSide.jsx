@@ -1,51 +1,3 @@
-// // RightSide.jsx
-// import React from "react";
-
-// const RightSide = ({ activeTab }) => {
-//   let content;
-
-//   switch (activeTab) {
-//     case "addQualifications":
-//       navigate("/qualifications");
-//       return null;
-
-//     case "postJob":
-//       content = <h2>Post Job Vacancies Page</h2>; // Replace with real component later
-//       break;
-//     case "logout":
-//       content = <h2>Logging out...</h2>;
-//       // Add logout logic here
-//       break;
-//     default:
-//       content = (
-//         <div className="flex flex-col items-center">
-//           <h1>Welcome to Skill Bridge</h1>
-//           <p>Connect your skills with the perfect career opportunities.</p>
-//           <div style={{ display: "flex", gap: "40px", marginTop: "30px" }}>
-//             <div>
-//               <strong>1000+</strong>
-//               <br />
-//               Active Jobs
-//             </div>
-//             <div>
-//               <strong>500+</strong>
-//               <br />
-//               Companies
-//             </div>
-//             <div>
-//               <strong>2000+</strong>
-//               <br />
-//               Professionals
-//             </div>
-//           </div>
-//         </div>
-//       );
-//   }
-
-//   return <div style={{ flex: 1, padding: "40px" }}>{content}</div>;
-// };
-
-// export default RightSide;
 
 import { useNavigate } from "react-router-dom";
 import React from "react";
@@ -55,6 +7,7 @@ const RightSide = ({ activeTab }) => {
   const navigate = useNavigate();
 
   switch (activeTab) {
+
     case "addQualifications":
       navigate("/qualifications");
       return null;
